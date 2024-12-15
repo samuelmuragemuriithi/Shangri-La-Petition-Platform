@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petitioner Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-green-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-semibold text-lg">Petition Platform</a>
+            <div class="space-x-4">
+                <a href="PettitionDashboardForm.html" 
+                    class="text-white hover:text-gray-200 transition-all duration-300">Home</a>
+                <a href="PettitionDashboardForm.html" 
+                    class="text-white hover:text-gray-200 transition-all duration-300">Dashboard</a>
+                <a href="index.html" 
+                    class="text-white hover:text-gray-200 transition-all duration-300">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <div class="container mx-auto p-6">
+        <h1 class="text-2xl font-bold text-green-600 mb-6">Petitioner Dashboard</h1>
+
+        <!-- Create a New Petition -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-green-600 mb-4">Create a New Petition</h2>
+            <form id="create-petition-form" class="space-y-4">
+                <div>
+                    <label for="petition-title" class="block text-sm font-medium text-gray-700">Title</label>
+                    <input type="text" id="petition-title" name="title" placeholder="Enter petition title" required 
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-600 focus:border-green-600 sm:text-sm">
+                </div>
+                <div>
+                    <label for="petition-content" class="block text-sm font-medium text-gray-700">Content</label>
+                    <textarea id="petition-content" name="content" rows="4" placeholder="Enter petition content" required 
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-600 focus:border-green-600 sm:text-sm"></textarea>
+                </div>
+                <button type="submit" 
+                    class="w-full bg-green-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-green-700">
+                    Create Petition
+                </button>
+            </form>
+        </div>
+
+        <!-- View All Petitions -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-green-600 mb-4">View All Petitions</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full table-auto border-collapse border border-gray-200">
+                    <thead>
+                        <tr class="bg-green-50">
+                            <th class="px-4 py-2 border text-left">Petition ID</th>
+                            <th class="px-4 py-2 border text-left">Title</th>
+                            <th class="px-4 py-2 border text-left">Content</th>
+                            <th class="px-4 py-2 border text-left">Status</th>
+                            <th class="px-4 py-2 border text-left">Response</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="px-4 py-2 border">1</td>
+                            <td class="px-4 py-2 border">Save the Forests</td>
+                            <td class="px-4 py-2 border">Protect our natural reserves.</td>
+                            <td class="px-4 py-2 border">Open</td>
+                            <td class="px-4 py-2 border">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sign a Petition -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-xl font-semibold text-green-600 mb-4">Sign a Petition</h2>
+            <form id="sign-petition-form" class="space-y-4">
+                <div>
+                    <label for="open-petitions" class="block text-sm font-medium text-gray-700">Select Petition</label>
+                    <select id="open-petitions" name="petition" required 
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-600 focus:border-green-600 sm:text-sm">
+                        <option value="" disabled selected>Select an open petition</option>
+                        <option value="1">Save the Forests</option>
+                        <option value="2">Clean the Rivers</option>
+                    </select>
+                </div>
+                <button type="submit" 
+                    class="w-full bg-green-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-green-700">
+                    Sign Petition
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

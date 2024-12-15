@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shangri-La Petition Platform - Dashboard</title>
+    <!-- Tailwind CSS CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-green-100">
+
+    <!-- Landing Page Section -->
+    <header class="bg-green-600 text-white p-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="PettitionDashboardForm.html" class="hover:text-green-200">Petitioner Dashboard</a></li>
+                    <li><a href="PettionCommitteDashboard.html" class="hover:text-green-200">Committee Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-green-600 mb-6">Welcome to the Shangri-La Petition Platform</h2>
+            <p class="text-lg text-gray-700 mb-12">Please choose one of the options below to manage your petitions or administrative tasks.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <!-- Petitioner Dashboard Link -->
+                <a href="PettitionDashboardForm.html" class="bg-green-500 text-white rounded-lg shadow-lg hover:bg-green-600 transition-all duration-300 p-8 text-center">
+                    <h3 class="text-xl font-semibold">Petitioner Dashboard</h3>
+                    <p class="mt-2">Create and sign petitions, and track their progress.</p>
+                </a>
+
+                <!-- Committee Dashboard Link -->
+                <a href="PettionCommitteDashboard.html" class="bg-green-500 text-white rounded-lg shadow-lg hover:bg-green-600 transition-all duration-300 p-8 text-center">
+                    <h3 class="text-xl font-semibold">Committee Dashboard</h3>
+                    <p class="mt-2">Manage petition thresholds, responses, and more.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-green-800 text-white text-center py-4">
+        <p>&copy; 2024 Shangri-La Petition Platform</p>
+    </footer>
+
+</body>
+</html>
